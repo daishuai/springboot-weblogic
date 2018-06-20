@@ -27,7 +27,7 @@ import java.util.Map;
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(entityManagerFactoryRef = "entityManagerFactoryOracle",
-        transactionManagerRef = "transactionManagerOralce",
+        transactionManagerRef = "transactionManagerOracle",
         basePackages = {"com.example.demo.repository.oracle"})
 public class OracleConfig {
 
@@ -60,7 +60,7 @@ public class OracleConfig {
     }
 
     @Primary
-    @Bean(name = "transactionManagerOralce")
+    @Bean(name = "transactionManagerOracle")
     public PlatformTransactionManager transactionManagerPrimary(EntityManagerFactoryBuilder builder) {
         return new JpaTransactionManager(entityManagerFactoryPrimary(builder).getObject());
     }
