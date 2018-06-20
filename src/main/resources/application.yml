@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    db1:
+      jndi-name: jdbc/oracle
+    db2:
+      jndi-name: jdbc/mysql
+  jpa:
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl

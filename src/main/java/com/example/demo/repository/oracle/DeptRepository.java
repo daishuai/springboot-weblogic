@@ -1,4 +1,4 @@
-package com.example.demo.repository;
+package com.example.demo.repository.oracle;
 
 import com.example.demo.vo.Department;
 import org.springframework.data.jpa.repository.JpaRepository;
